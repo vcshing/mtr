@@ -37,7 +37,7 @@ public class PhotoViewer extends CordovaPlugin {
             if (cordova.hasPermission(READ) && cordova.hasPermission(WRITE)) {
                 this.launchActivity();
             } else {
-           //     this.getPermission();
+        
             }
             return true;
         }
@@ -45,7 +45,7 @@ public class PhotoViewer extends CordovaPlugin {
     }
 
     protected void getPermission() {
-        cordova.requestPermissions(this, REQ_CODE, new String[]{WRITE, READ});
+     
     }
 
     protected void launchActivity() throws JSONException {

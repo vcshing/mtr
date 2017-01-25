@@ -66,6 +66,9 @@
         },
         "cordova-plugin-document-viewer": {
             "PACKAGE_NAME": "com.skyexplorer.mtr"
+        },
+        "com-sarriaroman-photoviewer": {
+            "PACKAGE_NAME": "com.skyexplorer.mtr"
         }
     },
     "dependent_plugins": {

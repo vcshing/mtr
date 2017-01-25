@@ -136,6 +136,14 @@
 		.vibrateImg{
 		
 		}
+		
+      //div.pinch-zoom,
+      //  div.pinch-zoom img{
+      //      width: 100%;
+      //      -webkit-user-drag: none;
+      //  }
+
+
 	 </style>
 </head>
 
@@ -177,8 +185,10 @@
                     <!-- Scrollable page content -->
                     <div class="page-content">
                         <div class="content-block">
-						
-							<img class="vibrateImg" src="routemap.png"></img>
+							<div class="pinch-zoom">
+								<img id="img1" src="routemap.png"/>
+							</div>
+			
 							<br/>
 						<!--	<div class="onoffswitch">
 								<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch">
@@ -222,10 +232,22 @@
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
     <script type="text/javascript" src="js/my-app.js"></script>
+	
+<script type="text/javascript" src="js/pinchzoom.js"></script>
+
 	<script>
 
+
+
+
 	$(function(){
-	
+          //  $('div.pinch-zoom').each(function () {
+          //      new RTP.PinchZoom($(this), {});
+          //  });
+		  
+		  PhotoViewer.show('routemap.png', 'MTR');
+		  
+		  
 		$(".onoffswitch-label").bind("click",function(){
 			if($(".onoffswitch-checkbox").is(':checked')=== true){
 				navigator.vibrate([]);

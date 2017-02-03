@@ -80,33 +80,12 @@
                 <div data-page="index" class="page">
                     <!-- Scrollable page content -->
                     <div class="page-content">
-                        <div class="content-block">
+                  
 							<div class="pinch-zoom">
 								<img id="img1" src="routemap.png"/>
 							</div>
 			
-							<br/>
-						<!--	<div class="onoffswitch">
-								<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch">
-								<label class="onoffswitch-label" for="myonoffswitch">
-									<span class="onoffswitch-inner"></span>
-									<span class="onoffswitch-switch"></span>
-								</label>
-							</div>
-							<br/>
-
-							<div class="onoffswitch2">
-								
-								<input type="checkbox" name="onoffswitch2" class="onoffswitch-checkbox2" id="myonoffswitch2">
-								<label class="onoffswitch-label2" for="myonoffswitch2">
-									<span class="onoffswitch-inner2"></span>
-									<span class="onoffswitch-switch2"></span>
-								</label>
-							</div>
-							-->
-                            <!-- Link to another page -->
-                           <!-- <a href="about.html">About app</a>-->
-                        </div>
+		
                     </div>
                 </div>
             </div>
@@ -129,7 +108,7 @@
     <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
     <script type="text/javascript" src="js/my-app.js"></script>
 	
-<!--<script type="text/javascript" src="js/pinchzoom.js"></script>-->
+<script type="text/javascript" src="js/pinchzoom.js"></script>
 
 	<script>
 
@@ -137,9 +116,9 @@
 
 
 	$(function(){
-          //  $('div.pinch-zoom').each(function () {
-          //      new RTP.PinchZoom($(this), {});
-          //  });
+            $('div.pinch-zoom').each(function () {
+                new RTP.PinchZoom($(this), {});
+            });
 
 		//document.addEventListener("online", onOnline, false);
 
